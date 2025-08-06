@@ -64,7 +64,7 @@ export default function CreateTokenPage() {
   const { address } = useAccount();
 
   console.log("channelTitle", channelTitle);
-  console.log("channelThumbnail", channelThumbnail tes);
+  console.log("channelThumbnail", channelThumbnail);
 
   const { toast } = useToast();
   const router = useNavigate();
