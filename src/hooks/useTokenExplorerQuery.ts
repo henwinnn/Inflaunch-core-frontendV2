@@ -2,7 +2,7 @@ import { useQuery } from "@tanstack/react-query";
 import { useState } from "react";
 
 const fetchTokenExplorer = async () => {
-  const res = await fetch("https://cloutponder.onrender.com/token-explorer", {
+  const res = await fetch("https://inflaunch-core-backend.onrender.com/", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({

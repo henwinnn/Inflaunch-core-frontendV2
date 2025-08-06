@@ -1,7 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 
 const fetchTokenDailyMetrics = async () => {
-  const res = await fetch("https://cloutponder.onrender.com/", {
+  const res = await fetch("https://inflaunch-core-backend.onrender.com/", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({

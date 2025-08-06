@@ -36,7 +36,7 @@ export const useOHLC = (pairAddress: string): UseOHLCReturn => {
 
     try {
       const response = await fetch(
-        `https://cloutponder.onrender.com/tradingview/${pairAddress}?t=${Date.now()}`
+        `https://inflaunch-core-backend.onrender.com/${pairAddress}?t=${Date.now()}`
       );
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);

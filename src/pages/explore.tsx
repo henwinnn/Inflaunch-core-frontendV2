@@ -408,6 +408,7 @@ function TokenList({
 function EnhancedTokenCard({ token }: { token: any }) {
   const isPositiveChange = token.priceChange24h >= 0;
 
+  console.log(token.pair);
   return (
     <Link to={`/token/${token.pair}`} className="block group">
       <Card className="h-full overflow-hidden rounded-xl shadow-lg hover:shadow-primary/20 transition-all duration-300 ease-in-out transform hover:-translate-y-1 bg-card/80 backdrop-blur-sm">

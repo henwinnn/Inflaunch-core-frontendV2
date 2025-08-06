@@ -12,7 +12,7 @@ const useTokenInfo = (pair: string) => {
     try {
       setLoading(true);
       const response = await fetch(
-        `https://cloutponder.onrender.com/token/${pair}`
+        `https://inflaunch-core-backend.onrender.com/token/${pair}`
       );
 
       if (!response.ok) {
