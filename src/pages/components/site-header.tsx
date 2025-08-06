@@ -109,7 +109,6 @@ export function SiteHeader() {
             Inflaunch.core
           </span>
         </Link>
-        <ConnectButton />
 
         <div className="flex flex-1 items-center justify-end space-x-2 md:space-x-4">
           <div className="hidden md:flex w-full flex-1 md:w-auto md:flex-none">
