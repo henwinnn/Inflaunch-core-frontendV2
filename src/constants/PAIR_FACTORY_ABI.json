@@ -1,0 +1,184 @@
+[
+  {
+    "inputs": [
+      {
+        "name": "_uniswapRouter",
+        "internalType": "address",
+        "type": "address"
+      },
+      {
+        "name": "_graduationThreshold",
+        "internalType": "uint256",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [
+      { "name": "owner", "internalType": "address", "type": "address" }
+    ],
+    "name": "OwnableInvalidOwner",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      { "name": "account", "internalType": "address", "type": "address" }
+    ],
+    "name": "OwnableUnauthorizedAccount",
+    "type": "error"
+  },
+  { "inputs": [], "name": "ZeroAddress", "type": "error" },
+  { "inputs": [], "name": "ZeroAmount", "type": "error" },
+  {
+    "inputs": [
+      {
+        "indexed": true,
+        "name": "projectToken",
+        "internalType": "address",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "name": "pair",
+        "internalType": "address",
+        "type": "address"
+      }
+    ],
+    "name": "EthPairCreated",
+    "anonymous": false,
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "indexed": true,
+        "name": "previousOwner",
+        "internalType": "address",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "name": "newOwner",
+        "internalType": "address",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferred",
+    "anonymous": false,
+    "type": "event"
+  },
+  {
+    "outputs": [
+      { "name": "pairAddr", "internalType": "address", "type": "address" }
+    ],
+    "inputs": [
+      { "name": "ethAmount", "internalType": "uint256", "type": "uint256" },
+      { "name": "projectToken", "internalType": "address", "type": "address" },
+      {
+        "name": "projectTokenAmount",
+        "internalType": "uint256",
+        "type": "uint256"
+      },
+      { "name": "feeReceiver", "internalType": "address", "type": "address" }
+    ],
+    "name": "createEthPair",
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "outputs": [{ "name": "", "internalType": "uint256", "type": "uint256" }],
+    "inputs": [],
+    "name": "defaultFeeRate",
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "outputs": [{ "name": "", "internalType": "address", "type": "address" }],
+    "inputs": [{ "name": "", "internalType": "address", "type": "address" }],
+    "name": "getPair",
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "outputs": [{ "name": "", "internalType": "address", "type": "address" }],
+    "inputs": [],
+    "name": "getUniswapRouterAddress",
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "outputs": [{ "name": "", "internalType": "uint256", "type": "uint256" }],
+    "inputs": [],
+    "name": "graduationThreshold",
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "outputs": [{ "name": "", "internalType": "address", "type": "address" }],
+    "inputs": [],
+    "name": "owner",
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "outputs": [],
+    "inputs": [],
+    "name": "renounceOwnership",
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "outputs": [],
+    "inputs": [
+      {
+        "name": "_defaultFeeRate",
+        "internalType": "uint256",
+        "type": "uint256"
+      }
+    ],
+    "name": "setDefaultFeeRate",
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "outputs": [],
+    "inputs": [
+      {
+        "name": "_graduationThreshold",
+        "internalType": "uint256",
+        "type": "uint256"
+      }
+    ],
+    "name": "setGraduationThreshold",
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "outputs": [],
+    "inputs": [
+      { "name": "_uniswapRouter", "internalType": "address", "type": "address" }
+    ],
+    "name": "setUniswapRouter",
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "outputs": [],
+    "inputs": [
+      { "name": "newOwner", "internalType": "address", "type": "address" }
+    ],
+    "name": "transferOwnership",
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "outputs": [{ "name": "", "internalType": "address", "type": "address" }],
+    "inputs": [],
+    "name": "uniswapRouter",
+    "stateMutability": "view",
+    "type": "function"
+  },
+  { "stateMutability": "payable", "type": "receive" }
+]
