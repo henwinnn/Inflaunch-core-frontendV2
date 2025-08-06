@@ -4,7 +4,7 @@ export const googleOAuthConfig = {
   clientSecret: (import.meta as any).env.VITE_GOOGLE_CLIENT_SC,
   authorizationUrl: "https://accounts.google.com/o/oauth2/v2/auth",
   tokenUrl: "https://oauth2.googleapis.com/token",
-  redirectUri: "https://inflaunch.core.vercel.app/explore",
+  redirectUri: "https://inflaunch-core.vercel.app/explore",
   scope: "https://www.googleapis.com/auth/youtube.readonly",
   responseType: "code",
 };
